@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murali Munireddy - Data Engineer</title>
+
+    <!-- Favicon (Optional - Place in assets/images/) -->
+    <!-- <link rel="icon" type="image/png" href="assets/images/favicon.png"> -->
+
+    <!-- Font Awesome (Icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+    <!-- AOS (Animate on Scroll) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Scroll Top Button -->
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Murali<span> Munireddy</span></a></div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn active">Home</a></li> <!-- Start with Home active -->
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#experience" class="menu-btn">Experience</a></li>
+                <li><a href="#skills" class="menu-btn">Skills</a></li>
+                <li><a href="#projects" class="menu-btn">Projects</a></li> <!-- Added Projects Link -->
+                <li><a href="#achievements" class="menu-btn">Achievements</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
+            </ul>
+            <div class="menu-btn-mobile">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1" data-aos="fade-up">Hello, my name is</div>
+                <div class="text-2" data-aos="fade-up" data-aos-delay="100">Murali Munireddy</div>
+                <div class="text-3" data-aos="fade-up" data-aos-delay="200">And I'm a <span class="typing"></span></div>
+                <a href="#contact" class="btn" data-aos="fade-up" data-aos-delay="300">Hire Me</a>
+                <div class="social-links" data-aos="fade-up" data-aos-delay="400">
+                    <a href="https://www.linkedin.com/in/murali-munireddy-b45b80177" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:muralee.m13@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <!-- Add other links like GitHub if applicable -->
+                    <!-- <a href="#"><i class="fab fa-github"></i></a> -->
+                </div>
+            </div>
+        </div>
+         <!-- Optional Scroll Down Arrow -->
+         <a href="#about" class="scroll-down"><i class="fas fa-chevron-down"></i></a>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title" data-aos="fade-up">About Me</h2>
+            <div class="about-content">
+                <div class="column left" data-aos="fade-right">
+                    <!-- === IMPORTANT: Update this path === -->
+                    <img src="assets/images/murali-photo.jpg" alt="Murali Munireddy">
+                    <!-- Fallback placeholder:
+                    <img src="https://via.placeholder.com/350x350/111/888?text=Murali+M." alt="Murali Munireddy">
+                    -->
+                </div>
+                <div class="column right" data-aos="fade-left">
+                    <div class="text">I'm Murali and I'm a <span class="typing-2"></span></div>
+                    <p>Data Engineer with over 3 years of hands-on experience in designing, building, and maintaining ETL pipelines using PySpark and AWS cloud services. Proficient in data processing, transformation, and modeling with a solid understanding of data warehousing concepts. Experienced in working with large datasets on AWS platforms like S3, Redshift, Glue, EMR, and Lambda. Strong background in implementing CI/CD processes and tools, with knowledge of big data technologies and real-time data processing. Adept at working in agile environments, collaborating with cross-functional teams, and leveraging modern data engineering solutions to deliver impactful insights.</p>
+                    <!-- === IMPORTANT: Update this path and ensure file exists === -->
+                    <a href="assets/pdf/Murali_Munireddy_Resume.pdf" download class="btn">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="max-width">
+            <h2 class="title" data-aos="fade-up">Professional Experience</h2>
+            <div class="experience-content">
+                <div class="card" data-aos="fade-up">
+                    <div class="box">
+                        <i class="fas fa-briefcase"></i>
+                        <div class="text">Data Engineer</div>
+                        <p><strong>Tata Consultancy Services (TCS)</strong> | Bangalore</p>
+                        <p class="dates">July 2022 - Present</p>
+                        <ul>
+                            <li>Designed & maintained AWS ETL pipelines (PySpark).</li>
+                            <li>Implemented AWS Glue, EMR, Lambda workflows (30% latency reduction).</li>
+                            <li>Managed S3/Redshift storage.</li>
+                            <li>Developed data models & warehousing solutions.</li>
+                            <li>Monitored/Optimized pipelines; Implemented best practices (validation, logging).</li>
+                         </ul>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                     <div class="box">
+                         <i class="fas fa-code-branch"></i>
+                        <div class="text">ETL Developer</div>
+                        <p><strong>Tata Consultancy Services (TCS)</strong> | Bangalore</p>
+                        <p class="dates">May 2021 - June 2022</p>
+                        <ul>
+                            <li>Implemented source-to-target ETL pipelines.</li>
+                            <li>Collaborated on scalable data model design.</li>
+                            <li>Optimized SQL queries & database performance.</li>
+                            <li>Provided technical support for data ingestion/processing.</li>
+                            <li>Optimized Datawarehouse models/architectures.</li>
+                        </ul>
+                    </div>
+                </div>
+                 <!-- Education Card -->
+                 <div class="card" data-aos="fade-up" data-aos-delay="200">
+                     <div class="box">
+                         <i class="fas fa-graduation-cap"></i>
+                        <div class="text">Education</div>
+                        <p><strong>Bachelor of Engineering (8.83 CGPA)</strong></p>
+                        <p>Sona College of Technology, Salem, Tamil Nadu.</p>
+                        <p class="dates">(2016 – 2020)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title" data-aos="fade-up">My Skills</h2>
+            <div class="skills-content">
+                <div class="column left" data-aos="fade-right">
+                    <div class="text">Technical Skills</div>
+                    <p>Proficient in a range of modern data engineering technologies and practices. Experienced in cloud platforms, big data processing, database management, and automation.</p>
+                    <a href="#contact" class="btn">Contact Me</a>
+                </div>
+                <div class="column right" data-aos="fade-left">
+                    <div class="bars">
+                        <div class="info">
+                            <span>Python / PySpark / SQL</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="line python"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>AWS (Glue, EMR, S3, Redshift, Lambda)</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="line aws"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>ETL / Data Warehousing / Data Modeling</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="line etl"></div>
+                    </div>
+                     <div class="bars">
+                        <div class="info">
+                            <span>Big Data (Spark, Hadoop, Hive)</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="line bigdata"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>CI/CD / DevOps / Git</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="line cicd"></div>
+                    </div>
+                     <div class="bars">
+                        <div class="info">
+                            <span>Databases (SQL/NoSQL)</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="line db"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="max-width">
+            <h2 class="title" data-aos="fade-up">My Projects</h2>
+            <div class="projects-content">
+                <div class="card" data-aos="fade-up">
+                    <div class="box">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <div class="text">Modernized Data Warehousing Using Cloud</div>
+                        <p class="project-description">
+                            Built a modern cloud-based data warehousing solution to ingest and integrate data from multiple organizational sources into a single source of truth on Azure, enabling consistent access for BI, ML, and AI-driven decisions.
+                        </p>
+                        <div class="technologies">
+                            <strong>Technologies Used:</strong>
+                            <ul>
+                                <li><i class="fab fa-microsoft"></i> Azure (ADLS, Blob, Databricks, Synapse, Data Factory, Functions)</li>
+                                <li><i class="fab fa-python"></i> Python</li>
+                                <li><i class="fas fa-database"></i> SQL</li>
+                                <li><i class="fas fa-cogs"></i> Apache Airflow</li>
+                            </ul>
+                        </div>
+                         <!-- Optional: Add Links -->
+                         <!--
+                         <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="btn-project">View Code <i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="btn-project">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                         </div>
+                         -->
+                    </div>
+                </div>
+
+                <!-- Add more project cards here if needed -->
+
+            </div>
+        </div>
+    </section>
+
+     <!-- Achievements Section -->
+     <section class="achievements" id="achievements">
+        <div class="max-width">
+            <h2 class="title" data-aos="fade-up">Achievements & Awards</h2>
+            <div class="achievements-content">
+                 <div class="card" data-aos="zoom-in">
+                    <div class="box">
+                        <i class="fas fa-award"></i>
+                        <div class="text">Outstanding Data Engineer</div>
+                         <p>Received award at TCS(Client) for exceptional contributions to data engineering.</p>
+                    </div>
+                 </div>
+                 <div class="card" data-aos="zoom-in" data-aos-delay="100">
+                     <div class="box">
+                         <i class="fas fa-thumbs-up"></i>
+                         <div class="text">Client Satisfaction</div>
+                         <p>Appreciation award for delivering highly efficient product within prescribed ET by adhering to SLA.</p>
+                    </div>
+                 </div>
+                 <div class="card" data-aos="zoom-in" data-aos-delay="200">
+                     <div class="box">
+                         <i class="fas fa-star"></i>
+                        <div class="text">Recognition</div>
+                         <p>Received On-Spot and Employee of the Month Award.</p>
+                    </div>
+                 </div>
+            </div>
+             <!-- Certifications List -->
+             <div class="certifications-list" data-aos="fade-up" data-aos-delay="300">
+                 <h3>Certifications</h3>
+                 <ul>
+                    <li><i class="fab fa-aws"></i> AWS Essentials Hands-on learning (Udemy)</li>
+                    <li><i class="fas fa-database"></i> Taming Bigdata with Apache Spark and Python (Udemy)</li>
+                    <li><i class="fas fa-code"></i> Hive to Advance Hive Hands-on (Udemy)</li>
+                    <li><i class="fas fa-cogs"></i> DevOps CI/CD for beginners (Udemy)</li>
+                 </ul>
+             </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title" data-aos="fade-up">Contact Me</h2>
+            <div class="contact-content">
+                <div class="column left" data-aos="fade-right">
+                    <div class="text">Get in Touch</div>
+                    <p>Feel free to reach out for collaboration, opportunities, or any inquiries. I'm always open to discussing new projects and challenges in the data engineering space.</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Murali Munireddy</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Whitefield, Bangalore, India</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title"><a href="mailto:muralee.m13@gmail.com">muralee.m13@gmail.com</a></div>
+                            </div>
+                        </div>
+                         <div class="row">
+                            <i class="fas fa-phone"></i>
+                            <div class="info">
+                                <div class="head">Phone</div>
+                                <div class="sub-title"><a href="tel:+917708229018">+91 7708229018</a></div>
+                            </div>
+                        </div>
+                         <div class="row">
+                             <i class="fab fa-linkedin"></i>
+                            <div class="info">
+                                <div class="head">LinkedIn</div>
+                                <div class="sub-title"><a href="https://www.linkedin.com/in/murali-munireddy-b45b80177" target="_blank" rel="noopener noreferrer">linkedin.com/in/murali-munireddy...</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right" data-aos="fade-left">
+                    <div class="text">Message Me (Conceptual)</div>
+                    <!-- A real form needs backend processing -->
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit" class="btn">Send message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <span>Created By <a href="#home">Murali Munireddy</a> | <span class="far fa-copyright"></span> 2024 All rights reserved.</span>
+        <div class="social-links-footer">
+             <a href="https://www.linkedin.com/in/murali-munireddy-b45b80177" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+             <a href="mailto:muralee.m13@gmail.com"><i class="fas fa-envelope"></i></a>
+             <!-- Add other links -->
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script> <!-- Often used with scroll effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
