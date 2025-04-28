@@ -109,7 +109,7 @@ $(document).ready(function(){
     // Typing animation - Home Section
     if ($('.typing').length) {
         var typed = new Typed(".typing", {
-            strings: ["Data Engineer", "ETL Developer", "AWS Enthusiast", "Python Programmer", "Cloud Practitioner"],
+            strings: ["Data Software Engineer", "ETL Developer", "Data Scientist", "Python Programmer", "Cloud Practitioner", "AI/ML Engineer"],
             typeSpeed: 100,
             backSpeed: 60,
             loop: true,
