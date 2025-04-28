@@ -316,9 +316,9 @@
                     </div>
                 </div>
                 <div class="column right" data-aos="fade-left">
-                    <div class="text">Message Me (Conceptual)</div>
+                    <div class="text">Message Me</div>
                     <!-- A real form needs backend processing -->
-                    <form action="#">
+                    <form id="contact-form" action="https://formsubmit.co/muralee.m13@gmail.com" method="POST">
                         <div class="fields">
                             <div class="field name">
                                 <input type="text" placeholder="Name" required>
@@ -337,6 +337,9 @@
                             <button type="submit" class="btn">Send message</button>
                         </div>
                     </form>
+                    <div id="form-status" class="form-status-message">
+                        <!-- This will be updated with JavaScript after form submission -->
+                    </div>
                 </div>
             </div>
         </div>

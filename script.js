@@ -140,5 +140,79 @@ $(document).ready(function(){
 
     // No specific Waypoints logic needed if relying on AOS for animations like skill bars
     // AOS will trigger animations when elements enter the viewport based on its settings.
+    
+
+    // === Add this code INSIDE the $(document).ready(function(){ ... }); block ===
+
+    // Contact Form AJAX Submission
+    const contactForm = $('#contact-form'); // Use the ID we added
+    const formStatus = $('#form-status');   // The div to show messages
+
+    contactForm.on('submit', function(event) {
+        event.preventDefault(); // Prevent the default browser submission
+
+        // Clear previous status messages and hide the status div
+        formStatus.html('').removeClass('success error visible').hide();
+
+        // Show a temporary sending message (optional)
+        formStatus.html('Sending...').addClass('visible').show();
+
+        const formData = new FormData(this);
+        const formAction = $(this).attr('action'); // Get URL from form's action attribute
+
+        fetch(formAction, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json' // Important: Ask FormSubmit for a JSON response
+            }
+        })
+        .then(response => {
+            if (response.ok) {
+                // Success!
+                contactForm[0].reset(); // Clear the form fields
+                formStatus.html("Thank You!<br>Your message has been sent successfully. I'll get back to you as soon as possible.")
+                          .removeClass('error') // Ensure no error class
+                          .addClass('success visible'); // Add success class and make visible
+            } else {
+                // Server responded with an error (e.g., FormSubmit internal issue)
+                response.json().then(data => { // Try to get error details from FormSubmit
+                    let errorMessage = "Oops! There was a problem submitting your form.";
+                    if (data && data.error) {
+                        errorMessage += ` Error: ${data.error}`;
+                    }
+                     formStatus.html(errorMessage)
+                               .removeClass('success')
+                               .addClass('error visible');
+                }).catch(() => {
+                    // Failed to parse JSON error details
+                    formStatus.html("Oops! There was a problem submitting your form. Server error.")
+                              .removeClass('success')
+                              .addClass('error visible');
+                });
+            }
+        })
+        .catch(error => {
+            // Network error or other fetch issue
+            console.error('Form submission error:', error);
+            formStatus.html("Oops! There was a network error. Please check your connection and try again.")
+                      .removeClass('success')
+                      .addClass('error visible');
+        })
+        .finally(() => {
+             // Optional: You could remove the 'Sending...' message here if you added one,
+             // but showing the final status is usually enough.
+
+             // Automatically hide the status message after some time (e.g., 10 seconds)
+             setTimeout(() => {
+                 formStatus.removeClass('visible').fadeOut(500, function() {
+                    // Reset classes after fading out
+                    $(this).removeClass('success error').html('').hide();
+                 });
+             }, 10000); // 10000 milliseconds = 10 seconds
+        });
+    });
+
+// === End of added code ===
 
 }); // End of document ready
